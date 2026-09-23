@@ -12,6 +12,6 @@ int main(void)
     }
     sleep(3);
     printf("Child PID=%d, new PPID=%d\\n", getpid(), getppid());
-    sleep(5);
+    sleep(20);
     return 0;
 }
