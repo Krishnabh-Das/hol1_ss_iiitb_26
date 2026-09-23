@@ -8,7 +8,7 @@ int main(void)
         return 1;
     if (p > 0) {
         printf("Parent %d exiting; child=%d\\n", getpid(), p);
-        return 0;
+        exit(0);
     }
     sleep(3);
     printf("Child PID=%d, new PPID=%d\\n", getpid(), getppid());
